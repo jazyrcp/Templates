@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<link rel="icon" href="nike_PNG20.png" sizes="2x8">
-		<title>Stores</title>
+		<title>Footwears</title>
 	<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="mycss.css"></link>
 	</head>
-	<body>
+	<body   style="background-image:url('#');position:fixed;width:100%;">
 		<ul class="nav nav-tabs" style="background-color:black;">
 			<li><img src="nike_PNG13.png" height=50px></li>
 			<li><a class="a11"href="home.html">Home</a></li>
@@ -95,18 +95,38 @@
 					</div>		
 				</div>
 			</div>
+			<div>
+				<div class="col-md-5">
+					<div class="thumbnail">
+						<img src="nike2-i.jpg">
+					</div>	
+				</div>
+				<div class="col-md-5">
+					<div style="padding:40px;">
+						<h1>Footwear</h1><hr>
+						<p>Description................</p>
+						<select data-toggle="tooltip" title="Size" data-placement="bottom">
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+						</select>
+						<select data-toggle="tooltip" title="Colour" data-placement="top">
+							<option>Red</option>
+							<option>Black</option>
+							<option>Grey</option>
+							<option>Blue</option>
+						</select><br>
+						<a><pre><span class="glyphicon glyphicon-globe"></span> www.nike.co</pre></a><br>
+						<button class="btn btn-success">Buy Now</button>
+						<button class="btn btn-info">Add to Cart</button>
 
-			<div class="container row">
-				<div class="col-md-9" style="margin:5px;color:black;">
-					<div class="jumbotron">
-						<h1>Stores near you</h1>
-					<img src="nike.png" style="width:100%;">
-					</div>
+					</div>	
 				</div>
 			</div>
-		</div>
 
-		<div id="mtmodal" class="modal fade">
+
+			<div id="mtmodal" class="modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -146,4 +166,10 @@
 			</div>
 		</div>
 	</body>
-</html>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+
+	</script>
+</html
